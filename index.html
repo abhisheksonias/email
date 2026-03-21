@@ -1,211 +1,77 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <style type="text/css">
-        /* Mobile-first adjustments via media queries for email clients that support them */
-        @media only screen and (max-width:480px) {
-            .container {
-                width: 100% !important;
-                max-width: 100% !important;
-                margin: 0 !important;
-            }
-
-            .inner {
-                padding: 16px !important;
-            }
-
-            /* Shift layout to top-left corner on small screens */
-            .outerCell {
-                text-align: left !important;
-                padding-left: 16px !important;
-                padding-right: 16px !important;
-            }
-
-            .top-row td {
-                display: block !important;
-                width: 100% !important;
-                text-align: left !important;
-            }
-
-            .logos {
-                text-align: left !important;
-                padding-bottom: 8px !important;
-            }
-
-            .logos td {
-                display: inline-block !important;
-                padding-right: 8px !important;
-            }
-
-            .website {
-                display: block !important;
-                text-align: left !important;
-                padding-top: 8px !important;
-                white-space: normal !important;
-            }
-
-            .name {
-                display: block !important;
-                font-size: 18px !important;
-                text-align: left !important;
-                padding-top: 8px !important;
-            }
-
-            .social {
-                display: block !important;
-                text-align: left !important;
-                padding-top: 8px !important;
-            }
-
-            .titleSpan {
-                display: block !important;
-                width: auto !important;
-                border-bottom: 1px solid rgba(30, 30, 30, 0.15) !important;
-                padding-bottom: 6px !important;
-                text-align: left !important;
-                margin: 0 !important;
-            }
-
-            .titleCell {
-                display: block !important;
-                text-align: left !important;
-                padding-top: 10px !important;
-            }
-
-            .cta {
-                display: block !important;
-                width: 100% !important;
-                box-sizing: border-box !important;
-                padding: 10px 12px !important;
-                margin-top: 10px !important;
-                text-align: left !important;
-            }
-
-            .contacts {
-                display: block !important;
-                text-align: left !important;
-                padding-top: 10px !important;
-            }
-
-            img {
-                height: auto !important;
-                max-width: 100% !important;
-            }
-        }
-
-        /* Ensure links don't inherit underline in some email clients */
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <title>Email Signature</title>
 </head>
 
-<body style="margin: 0; padding: 0; background: #fff; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0"
-        style="font-family:'Inter', Arial, Helvetica, sans-serif;">
+<body style="margin:0;padding:0;background:#777777;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="620" height="220" style="width:620px;max-width:620px;height:220px;border-collapse:collapse;
+           font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
+           background:#f7f7f7;
+           background-image: url('logo.png'),
+                             url('side6.png'),
+                             url('bg.png');
+           background-repeat: no-repeat, no-repeat, no-repeat;
+           background-position: right 40px bottom 117px, right -10px top 0px, center;
+           background-size: 130px auto, contain, cover;">
+
+        <!-- SPACER: top margin = 15px -->
         <tr>
-            <td align="left" class="outerCell" style="padding: 28px 28px;">
-                <!-- Outer container (white card on light grey) -->
-                <table class="container" width="600" cellpadding="0" cellspacing="0" border="0"
-                    style="max-width:626px; width:100%; background: #E7E7E7; border-radius: 8px; overflow: hidden; margin:0;">
+            <td height="15" style="height:15px;font-size:0;line-height:0;padding:0;"><img
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1"
+                    height="15" style="display:block;width:1px;height:15px;" alt="" /></td>
+        </tr>
+
+        <!-- ROW 1: Avatar + Name block -->
+        <tr>
+            <td style="padding:0 24px;font-size:0;line-height:0;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
                     <tr>
-                        <td class="inner" style="padding: 28px 30px;">
-                            <!-- TOP ROW: logos left, website right -->
-                            <table class="top-row" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <td width="62" valign="top" style="width:62px;padding:0;vertical-align:top;">
+                            <img src="Vector.png" alt="Abhishek Soni" width="52" height="60"
+                                style="display:block;border:0;outline:none;text-decoration:none;width:52px;height:60px;" />
+                        </td>
+                        <td valign="top" style="padding:0;vertical-align:top;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                style="border-collapse:collapse;">
+                                <!-- SPACER: push name down from top of avatar = 8px -->
                                 <tr>
-                                    <td valign="middle" style="padding-bottom: 23px;">
-                                        <table class="logos" cellpadding="0" cellspacing="0" border="0"
-                                            style="vertical-align:middle;">
-                                            <tr>
-                                                <td style="padding-right:12px; vertical-align:middle;">
-                                                    <img src="https://cdn.prod.website-files.com/6862a01712a42e4474917493/698ec90cc08bc85ee5effe2b_appsrow-logo.svg"
-                                                        height="31" style="display:block; border:0; outline:none;"
-                                                        alt="Appsrow">
-                                                </td>
-                                                <td style="padding-right:6px; vertical-align:middle;">
-                                                    <img src="https://cdn.prod.website-files.com/6862a01712a42e4474917493/698ec90dca36aa32a45d9073_webflow-premium-partner-logo.png"
-                                                        height="24" style="display:block; border:0; outline:none;"
-                                                        alt="Webflow Partner">
-                                                </td>
-                                                <td style="vertical-align:middle;">
-                                                    <img src="https://cdn.prod.website-files.com/6862a01712a42e4474917493/698ec90cc326f4c64c5d1b45_Global%20Leader.svg"
-                                                        height="24" style="display:block; border:0; outline:none;"
-                                                        alt="Global Leader">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-
-                                    <td align="right" valign="middle" class="website"
-                                        style="font-size:16px; color:#1E1E1E; font-weight:500; line-height:160%; white-space:nowrap;">
-                                        <a href="https://www.appsrow.com/" style="color:#1E1E1E;">appsrow.com</a>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <!-- NAME + SOCIAL -->
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td valign="middle" class="name"
-                                        style="font-size:20px; font-weight:700; color:#111111; padding-top:8px;">
-                                        Sandeepsingh Sisodiya
-                                    </td>
-
-                                    <td align="right" valign="middle" class="social" style="padding-left:12px;">
-                                        <a href="https://clutch.co/profile/appsrow-best-webflow-agency-india"
-                                            style="text-decoration:none; margin-right:8px;">
-                                            <img src="https://cdn.prod.website-files.com/6862a01712a42e4474917493/698ec90d6679b0e2601af1e0_clutch-logo.svg"
-                                                alt="Clutch"
-                                                style="height:16px; display:inline-block; border:0; outline:none;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/appsrowsolutions"
-                                            style="text-decoration:none; margin-right:8px;">
-                                            <img src="https://cdn.prod.website-files.com/6862a01712a42e4474917493/698ec90c779abebf43ecd1c3_linkdin-logo.svg"
-                                                alt="LinkedIn"
-                                                style="height:16px; display:inline-block; border:0; outline:none;">
-                                        </a>
-                                        <a href="https://dribbble.com/Appsrow" style="text-decoration:none;">
-                                            <img src="https://cdn.prod.website-files.com/6862a01712a42e4474917493/698ec90ca5bfb3a82df552fc_dribble-logo.svg"
-                                                alt="Dribbble"
-                                                style="height:16px; display:inline-block; border:0; outline:none;">
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <!-- TITLE with border-bottom (not reaching CTA) + CTA on same row -->
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr style="vertical-align:middle;">
-                                    <!-- Title left with border-bottom only under the text -->
-                                    <td class="titleCell" style="padding-top:0px; font-size:16px; color:#6f6f6f;">
-                                        <span class="titleSpan"
-                                            style="display:inline-block; padding-bottom:10px; border-bottom:1px solid rgba(30,30,30,0.15); width:auto;">
-                                            CEO / Appsrow Solutions
-                                        </span>
-                                    </td>
-
-                                    <!-- CTA on the same row, aligned right; border not applied here -->
-                                    <td align="right" valign="middle"
-                                        style="padding-top:8px; white-space:nowrap; padding-top: 20px;">
-                                        <a class="cta" href="https://tidycal.com/appsrowsolutions/30-minute-meeting"
-                                            style="background: #e61e25; color: #ffffff; padding: 6px 20px; font-size: 14px; font-weight: 400; line-height: 160%; text-decoration: none; border-radius: 8px; display: inline-block; box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);">
-                                            Schedule Call
-                                        </a>
+                                    <td height="8" style="height:8px;font-size:0;line-height:0;padding:0;"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            width="1" height="8" style="display:block;width:1px;height:8px;" alt="" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="contacts"
-                                        style="font-size:14px; color:#1E1E1E; padding-top:12px;">
-                                        <a href="mailto:sandeep@appsrow.com"
-                                            style="color:#1E1E1E; font-weight:400; line-height:150%;">sandeep@appsrow.com</a>
-                                        &nbsp;/&nbsp;
-                                        <a href="tel:+91 9725194157"
-                                            style="color:#1E1E1E; font-weight:400; line-height:150%;">+91 9725194157</a>
+                                    <td
+                                        style="padding:0;font-size:14px;font-weight:500;color:#131316;line-height:16px;white-space:nowrap;">
+                                        Abhishek Soni</td>
+                                </tr>
+                                <!-- SPACER: name → designation gap = 3px -->
+                                <tr>
+                                    <td height="3" style="height:3px;font-size:0;line-height:0;padding:0;"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            width="1" height="3" style="display:block;width:1px;height:3px;" alt="" />
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding:0;font-size:8px;font-weight:400;color:#131316;line-height:10px;white-space:nowrap;">
+                                        Founder &amp; Business Strategy Lead</td>
+                                </tr>
+                                <!-- SPACER: designation → social gap = 3px -->
+                                <tr>
+                                    <td height="3" style="height:3px;font-size:0;line-height:0;padding:0;"><img
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            width="1" height="3" style="display:block;width:1px;height:3px;" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding:0;font-size:8px;font-weight:400;color:#131316;line-height:10px;white-space:nowrap;">
+                                        Instagram / Linkedin</td>
                                 </tr>
                             </table>
                         </td>
@@ -213,6 +79,103 @@
                 </table>
             </td>
         </tr>
+
+        <!-- SPACER: name block → services gap = 12px -->
+        <tr>
+            <td height="12" style="height:12px;font-size:0;line-height:0;padding:0;"><img
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1"
+                    height="12" style="display:block;width:1px;height:12px;" alt="" /></td>
+        </tr>
+
+        <!-- ROW 2: Services -->
+        <tr>
+            <td style="padding:0 24px;font-size:0;line-height:0;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="410"
+                    style="border-collapse:collapse;width:280px;">
+                    <tr>
+                        <td width="110" style="width:110px;padding:0 8px 0 0;vertical-align:middle;white-space:nowrap;">
+                            <img src="1.png" alt="" width="12" height="12"
+                                style="display:inline-block;vertical-align:middle;border:0;width:12px;height:12px;" />
+                            <span
+                                style="display:inline-block;vertical-align:middle;color:#131316;font-size:8px;font-weight:500;line-height:12px;margin-left:4px;">Branding</span>
+                        </td>
+                        <td width="135" style="width:135px;padding:0 8px 0 0;vertical-align:middle;white-space:nowrap;">
+                            <img src="2.png" alt="" width="12" height="12"
+                                style="display:inline-block;vertical-align:middle;border:0;width:12px;height:12px;" />
+                            <span
+                                style="display:inline-block;vertical-align:middle;color:#131316;font-size:8px;font-weight:500;line-height:12px;margin-left:4px;">Development</span>
+                        </td>
+                        <td width="165" style="width:165px;padding:0;vertical-align:middle;white-space:nowrap;">
+                            <img src="3.png" alt="" width="12" height="12"
+                                style="display:inline-block;vertical-align:middle;border:0;width:12px;height:12px;" />
+                            <span
+                                style="display:inline-block;vertical-align:middle;color:#131316;font-size:8px;font-weight:500;line-height:12px;margin-left:4px;">Marketing
+                                &amp; Advertising</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SPACER: services → email gap = 10px -->
+        <tr>
+            <td height="10" style="height:10px;font-size:0;line-height:0;padding:0;"><img
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1"
+                    height="10" style="display:block;width:1px;height:10px;" alt="" /></td>
+        </tr>
+
+        <!-- ROW 3: Email address -->
+        <tr>
+            <td style="padding:0 24px;font-size:0;line-height:0;">
+                <span
+                    style="color:#070707;text-decoration:none;font-size:20px;font-weight:700;line-height:22px;">hello</span><!--
+      --><span style="color:#070707;text-decoration:none;font-size:20px;font-weight:700;line-height:22px;">&#64;</span><!--
+      --><span style="color:#070707;text-decoration:none;font-size:20px;font-weight:700;line-height:22px;">beeztech.studio</span>
+            </td>
+        </tr>
+
+        <!-- SPACER: email → button row gap = 7px -->
+        <tr>
+            <td height="7" style="height:7px;font-size:0;line-height:0;padding:0;"><img
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1"
+                    height="7" style="display:block;width:1px;height:7px;" alt="" /></td>
+        </tr>
+
+        <!-- ROW 4: CTA button + website URL -->
+        <tr>
+            <td style="padding:0 24px;font-size:0;line-height:0;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                    style="border-collapse:collapse;width:200px;">
+                    <tr>
+                        <td style="padding:0;vertical-align:middle;">
+                            <a href="https://calendly.com/beeztech-studio/onboarding" target="_blank"
+                                rel="noopener noreferrer"
+                                style="display:inline-block;padding:6px 10px;border-radius:999px;background:#070707;color:#ffffff;text-decoration:none;font-size:9px;font-weight:400;line-height:1;white-space:nowrap;">
+                                Book a 15-min call
+                            </a>
+                        </td>
+                        <!-- SPACER: button → URL gap = 15px (change this width to adjust) -->
+                        <td width="15" style="width:15px;font-size:0;line-height:0;padding:0;"><img
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                width="15" height="1" style="display:block;width:15px;height:1px;" alt="" /></td>
+                        <td style="padding:0;vertical-align:middle;">
+                            <a href="https://www.beeztech.studio" target="_blank" rel="noopener noreferrer"
+                                style="display:inline-block;color:#131316;text-decoration:none;font-size:9px;font-weight:400;line-height:1;white-space:nowrap;">
+                                www.beeztech.studio
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SPACER: bottom margin = 15px -->
+        <tr>
+            <td height="15" style="height:15px;font-size:0;line-height:0;padding:0;"><img
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1"
+                    height="15" style="display:block;width:1px;height:15px;" alt="" /></td>
+        </tr>
+
     </table>
 </body>
 
